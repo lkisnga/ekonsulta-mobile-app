@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase:{
-    apiKey: 'AIzaSyCsUcpzvsSIQhRB6GCA4iRmHMLm8-jDRzs',
-    authDomain: 'ionic-login-c3777.firebaseapp.com',
-    projectId: 'ionic-login-c3777',
-    storageBucket: 'ionic-login-c3777.appspot.com',
-    messagingSenderId: '487454284354',
-    appId: '1:487454284354:web:02d5365c0e4d0cab8d2bdb'
+    apiKey: 'AIzaSyDdNrH7dMpRqmFlAleV43vBQKSRJ7R4N2k',
+  authDomain: 'e-konsulta-b7c0d.firebaseapp.com',
+  projectId: 'e-konsulta-b7c0d',
+  storageBucket: 'e-konsulta-b7c0d.appspot.com',
+  messagingSenderId: '975548540004',
+  appId: '1:975548540004:web:69b6ef10f6cec17a1e2b71',
   }
 };
 
