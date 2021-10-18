@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable @typescript-eslint/semi */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -10,12 +11,16 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 })
 export class LoginPage implements OnInit {
   user={
-    userId:'',
+    userEmail:'',
+    userPassword:'',
+    userType:''
+  }
+    /*userId:'',
     userFname:'',
     userLname:'',
     userMname:'',
     userDOB:'',
-    userEmail:'',
+    email:'',
     userPassword:'',
     userImage:'',
     userType:'',
@@ -23,6 +28,7 @@ export class LoginPage implements OnInit {
     userContactNum:'',
     isVerified:'',
     dInfLicenseNumber:''
+    */
 
     /*
     email:'',
@@ -33,8 +39,9 @@ export class LoginPage implements OnInit {
     role:'',
     status:'',
     createAt:'',
-    updatedAt:''*/
+    updatedAt:''
   }
+  */
 
   constructor(private router: Router,
     public ngFireAuth: AngularFireAuth) { }
@@ -43,15 +50,22 @@ export class LoginPage implements OnInit {
   }
 
   async login() {
+    //const doc = 'doctor';
+    //const patient = 'patient';
     const user = await this.ngFireAuth.signInWithEmailAndPassword(this.user.userEmail, this.user.userPassword);
     console.log(user);
     if (user.user.email){
-      this.router.navigate(['/home']);
+      if(this.user.userEmail){
+        this.router.navigate(['/patient-landing']);
+      }
+      /*else if(this.user.userType == patient){
+        this.router.navigate(['/doctor-landing']);
+      }*/
     }else{
       alert('login failed!');
     }
   }
-  async register() {
+  /*async register() {
     const user = await this.ngFireAuth.createUserWithEmailAndPassword(this.user.userEmail, this.user.userPassword);
     console.log(user);
     if (user.user.email){
@@ -59,6 +73,6 @@ export class LoginPage implements OnInit {
     }else{
       alert('login failed!');
     }
-  }
+  }*/
 
 }

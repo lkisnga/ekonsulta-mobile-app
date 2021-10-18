@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor() {}
-  //rootPage:any = "LoginPageModule";
+  rootPage: any = 'LoginPageModule';
 }

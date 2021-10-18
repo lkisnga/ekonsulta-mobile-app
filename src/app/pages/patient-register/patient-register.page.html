@@ -5,17 +5,17 @@
     <ion-card>
       <ion-card-content>
         <ion-item>
-        <ion-input  type="email" placeholder="Email" required=true></ion-input>
+        <ion-input  type="email" placeholder="Email" required=true [(ngModel)]="user.email"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input  type="password" placeholder="Password" required=true></ion-input>
+        <ion-input  type="password" placeholder="Password" required=true [(ngModel)]="user.password"></ion-input>
       </ion-item>
       <div class="check">
         <ion-checkbox checked="false" color="secondary"></ion-checkbox>
         <ion-label>&nbsp;I agree with the <u>Terms and Coditions</u></ion-label>
       </div>
 
-      <ion-button display="center" id="btn1" color="rgb(28,54,94)">Sign Up</ion-button>
+      <ion-button display="center" id="btn1" color="rgb(28,54,94)" (click)="patientReg()">Sign Up</ion-button>
       </ion-card-content>
     </ion-card>
   </div>
