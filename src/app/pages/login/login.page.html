@@ -5,17 +5,18 @@
     <ion-card>
       <ion-card-content>
         <ion-item>
-        <ion-input  type="email" placeholder="Email" required=true></ion-input>
+        <ion-input [(ngModel)]="user.userEmail" type="email" placeholder="Email" required=true></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input  type="password" placeholder="Password" required=true></ion-input>
+        <ion-input [(ngModel)]="user.userPassword" type="password" placeholder="Password" required=true></ion-input>
       </ion-item>
       <div class="check">
         <ion-checkbox checked="false" color="secondary"></ion-checkbox>
         <ion-label>&nbsp;Remember me</ion-label>
       </div>
 
-      <ion-button display="center" id="btn1" color="rgb(28,54,94)">Login</ion-button>
+
+      <ion-button display="center" id="btn1" color="rgb(28,54,94)" (click)="login()">Login</ion-button>
       <ion-button fill="clear" expand="block" size="small" style="text-transform:none" color="medium" id="btn2">Forgot Password?</ion-button>
       </ion-card-content>
     </ion-card>

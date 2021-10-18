@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor() {}
-  rootPage:any = "LoginPageModule";
+  //rootPage:any = "LoginPageModule";
 }
