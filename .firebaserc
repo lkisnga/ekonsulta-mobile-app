@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "e-konsulta-b7c0d": {
+      "hosting": {
+        "app": [
+          "e-konsulta-b7c0d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "e-konsulta-b7c0d"
+  }
+}

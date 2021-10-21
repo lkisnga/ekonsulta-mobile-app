@@ -3,6 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { RouterLinkDelegate } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',

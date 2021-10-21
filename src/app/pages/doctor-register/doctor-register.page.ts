@@ -25,6 +25,7 @@ export class DoctorRegisterPage implements OnInit {
     console.log(user);
     if (user.user.email){
       alert('Registration Successful!');
+      this.router.navigate(['/doctor-landing']);
     }else{
       alert('Register failed!');
     }
