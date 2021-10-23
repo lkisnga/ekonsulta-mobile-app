@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>E-konsulta</ion-title>
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content>
+  <div class="block-center">
+    <h2>My Consultations</h2>
+    <ion-button  id="btn1" color="rgb(28,54,94)" expand="block">Book a Consultation</ion-button>
+
+    <ion-segment value="consultations" [(ngModel)]="selectTabs">
+      <ion-segment-button value="upcoming">
+        <ion-icon name="today"></ion-icon>
+        <ion-label>Upcoming</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="done">
+        <ion-icon name="checkmark-done-circle"></ion-icon>
+        <ion-label>Done</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div *ngIf="selectTabs=='upcoming'">
+      <h4><i>Upcoming consultations<br> show here</i></h4>
+    </div>
+
+    <div *ngIf="selectTabs=='done'">
+      <h4><i>Done consultations<br> show here</i></h4>
+    </div>
+
+  </div>
+</ion-content>
+

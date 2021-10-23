@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'patient-profile',
+    loadChildren: () => import('./pages/patient-profile/patient-profile.module').then( m => m.PatientProfilePageModule)
+  },
+  {
+    path: 'patient-consultation',
+    loadChildren: () => import('./pages/patient-consultation/patient-consultation.module').then( m => m.PatientConsultationPageModule)
+  },
 ];
 
 @NgModule({
