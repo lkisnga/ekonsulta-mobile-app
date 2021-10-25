@@ -26,7 +26,7 @@ export class PatientRegisterPage implements OnInit {
     if (user.user.email){
       this.user.userType = 'Patient'
       alert('Registration Successful!');
-      this.router.navigate(['/patient-landing']);
+      this.router.navigate(['/login']);
     }else{
       alert('Registration failed!');
     }

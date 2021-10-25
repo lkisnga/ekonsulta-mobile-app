@@ -57,7 +57,7 @@ export class LoginPage implements OnInit {
     console.log(user);
     if (user.user.email){
       if(this.user.userEmail){
-        this.router.navigate(['/patient-landing']);
+        this.router.navigate(['/patient-profile']);
       }
       /*else if(this.user.userType == patient){
         this.router.navigate(['/doctor-landing']);
