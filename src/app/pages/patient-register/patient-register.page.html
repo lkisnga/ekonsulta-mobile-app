@@ -1,22 +1,60 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title><b>Registration</b></ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div class="block-center" id="login">
-    <ion-img class="displayed" src="\assets\ekonsulta-logo.png" ></ion-img>
-    <h2>E-KONSULTA</h2>
-    <ion-card>
-      <ion-card-content>
-        <ion-item>
-        <ion-input  type="email" placeholder="Email" required=true [(ngModel)]="user.email"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input  type="password" placeholder="Password" required=true [(ngModel)]="user.password"></ion-input>
-      </ion-item>
-      <div class="check">
-        <ion-checkbox checked="false" color="secondary"></ion-checkbox>
-        <ion-label>&nbsp;I agree with the <u>Terms and Coditions</u></ion-label>
-      </div>
-
-      <ion-button display="center" id="btn1" color="rgb(28,54,94)" (click)="patientReg()">Sign Up</ion-button>
-      </ion-card-content>
-    </ion-card>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input placeholder="Firstname Mi. Lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime  placeholder="Select Date"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Address</ion-label>
+      <ion-input placeholder="Firstname Mi. Lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Health Insurance</ion-label>
+      <ion-select>
+        <ion-select value="None"></ion-select>
+        <ion-select-option value=None>None</ion-select-option>
+        <ion-select-option value="Manulife">Manulife</ion-select-option>
+        <ion-select-option value="Sunlife">Sunlife</ion-select-option>
+        <ion-select-option value="FWD">FWD</ion-select-option>
+        <ion-select-option value="Pru Life UK">Pru Life UK</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Health Insurance ID</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contact Number</ion-label>
+      <ion-input placeholder="(+63)" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input  type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Confirm Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="check">
+    <ion-checkbox checked="false" color="secondary"></ion-checkbox>
+    <ion-label>&nbsp;I agree with the <u>Terms and Coditions</u></ion-label>
   </div>
+  <div style="text-align:center;">
+    <ion-button display="center" id="btn1" color="rgb(28,54,94)" (click)="patientReg()">Sign Up</ion-button>
+  </div>
+
 </ion-content>

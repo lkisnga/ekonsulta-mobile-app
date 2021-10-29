@@ -37,12 +37,6 @@ h2{
   margin-bottom: 50px;
 }
 
-#btn3,#btn2{
-  color:#16c2d5;
-  outline-color: #16c2d5;
-}
-
-
 .check{
   margin-top: 10px;
   justify-content: left !important;
@@ -52,6 +46,14 @@ h2{
 
 #btn1{
   background-color:rgb(28,54,94);
-  margin-top: 10px;
+  margin-top: 15px;
+  width: 80%;
+
 }
 
+.check{
+  margin-top: 10px;
+  justify-content: left !important;
+  align-items: left !important;
+  margin-left: 3% !important;
+}
