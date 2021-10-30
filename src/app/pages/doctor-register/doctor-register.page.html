@@ -1,22 +1,61 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title><b>Registration</b></ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div class="block-center" id="login">
-    <ion-img class="displayed" src="\assets\ekonsulta-logo.png" ></ion-img>
-    <h2>E-KONSULTA</h2>
-    <ion-card>
-      <ion-card-content>
-        <ion-item>
-        <ion-input  type="email" placeholder="Email" required=true [(ngModel)]="user.docEmail"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input  type="password" placeholder="Password" required=true [(ngModel)]="user.docPassword"></ion-input>
-      </ion-item>
-      <div class="check">
-        <ion-checkbox checked="false" color="secondary"></ion-checkbox>
-        <ion-label>&nbsp;I agree with the <u>Terms and Coditions</u></ion-label>
-      </div>
-
-      <ion-button display="center" id="btn1" color="rgb(28,54,94)" (click)="doctorReg()">Sign Up</ion-button>
-      </ion-card-content>
-    </ion-card>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input placeholder="Firstname Mi. Lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime  placeholder="Select Date"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contact Number</ion-label>
+      <ion-input placeholder="(+63)" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>License Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Specialization</ion-label>
+      <ion-select>
+        <ion-select-option value="General Paracticioner">General Paracticioner</ion-select-option>
+        <ion-select-option value="EENT">Manulife</ion-select-option>
+        <ion-select-option value="Allergist">Allergist</ion-select-option>
+        <ion-select-option value="Pediatrician">Pediatrician</ion-select-option>
+        <ion-select-option value="Dermatologist">Dermatologist</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Address</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input  type="text"[(ngModel)]="user.docEmail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.docPassword"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Confirm Password</ion-label>
+      <ion-input primary type="password" [(ngModel)]="user.docPassword"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="check">
+    <ion-checkbox checked="false" color="secondary"></ion-checkbox>
+    <ion-label>&nbsp;I agree with the <u>Terms and Coditions</u></ion-label>
+  </div>
+  <div style="text-align:center;">
+    <ion-button display="center" id="btn1" color="rgb(28,54,94)" (click)="doctorReg()">Sign Up</ion-button>
   </div>
 </ion-content>
