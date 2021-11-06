@@ -7,8 +7,6 @@
 <ion-header class="ion-no-border">
   <ion-toolbar style="text-align:center;">
     <ion-title id="fixed">My Consultations</ion-title>
-    <ion-button  id="btn1" color="rgb(28,54,94)" size="medium">Book a Consultation</ion-button>
-
     <ion-segment value="consultations" [(ngModel)]="selectTabs">
       <ion-segment-button value="upcoming">
         <ion-icon name="today"></ion-icon>
@@ -22,8 +20,12 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="light" id="fab" data-desc="Description 2">
+      <ion-icon name="add" id="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <div *ngIf="selectTabs=='upcoming'">
     <ion-list>
       <ion-item>

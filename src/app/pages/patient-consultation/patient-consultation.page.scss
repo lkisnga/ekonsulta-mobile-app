@@ -9,17 +9,11 @@
   transform: translate(-50%, -50%);
 }
 
-
-#btn1{
-  background-color:rgb(28,54,94);
-  border-radius: 4px;
-  margin-top: 10px;
-}
-
 #fixed{
   color: dimgray;
   font-size: x-large;
   margin-top: 8px;
+  margin-bottom: 5px;
   color: dimgray;
 }
 
@@ -27,4 +21,12 @@ ion-segment-button {
   overflow: hidden;
   --color-checked: #16c2d5;
   border-radius: 4px;
+}
+
+#fab{
+ --ion-color-base: #1C365E !important;
+}
+
+#add{
+  color: white !important;;
 }
