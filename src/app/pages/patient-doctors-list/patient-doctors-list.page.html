@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>E-konsulta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+  <ion-toolbar style="text-align:center;">
+    <ion-searchbar animated></ion-searchbar>
+    <ion-item>
+      <ion-label>Specialization</ion-label>
+      <ion-select interface="popover" value="All">
+        <ion-select-option value="All">All</ion-select-option>
+        <ion-select-option value="General Practitioner">General Practitioner</ion-select-option>
+        <ion-select-option value="Allergist">Allergist</ion-select-option>
+        <ion-select-option value="Dermatologist">Dermatologist</ion-select-option>
+        <ion-select-option value="Pediatrician">Pediatrician</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Grace Gee</h2>
+        <p>General Practioner</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Jun Amistad</h2>
+        <p>Allergist</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>James Claudio</h2>
+        <p>Allergist</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

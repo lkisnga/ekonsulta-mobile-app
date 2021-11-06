@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'patient-transactionhistory',
     loadChildren: () => import('./pages/patient-transactionhistory/patient-transactionhistory.module').then( m => m.PatientTransactionhistoryPageModule)
   },
+  {
+    path: 'patient-doctors-list',
+    loadChildren: () => import('./pages/patient-doctors-list/patient-doctors-list.module').then( m => m.PatientDoctorsListPageModule)
+  },
 ];
 
 @NgModule({
