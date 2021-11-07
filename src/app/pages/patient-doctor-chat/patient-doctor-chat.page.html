@@ -7,7 +7,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar id="fixed">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/patient-consultation"></ion-back-button>
+      <ion-back-button routerLink="/patient-consultation"></ion-back-button>
     </ion-buttons>
     <ion-avatar slot="start">
       <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" id="pic">
@@ -16,7 +16,7 @@
       <ion-button class="right">
         <ion-icon name="videocam"></ion-icon>
       </ion-button>
-      <ion-button class="right">
+      <ion-button class="right" routerLink="/patient-chat-info">
         <ion-icon name="information-circle"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -33,8 +33,8 @@
     <ion-item>
       <ion-textarea placeholder="Type to chat"></ion-textarea>
     </ion-item>
-    <ion-buttons slot="end" class="right">
-      <ion-button class="right">
+    <ion-buttons slot="end">
+      <ion-button>
         <ion-icon name="send" id="send"></ion-icon>
       </ion-button>
     </ion-buttons>

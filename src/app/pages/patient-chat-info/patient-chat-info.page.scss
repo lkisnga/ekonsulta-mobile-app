@@ -1,0 +1,25 @@
+ion-avatar{
+  margin: auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-color: #16c2d5;
+  border-style: solid;
+}
+
+#back{
+  color:darkslategrey;
+  --border-radius: 150%;
+  width: 16% !important;
+  height:10% !important;
+  padding:1px;
+}
+
+ion-icon{
+  width: 100px;
+  height: 100px;
+}
+
+ion-item{
+  color:#1C365E;
+}
