@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'patient-doctors-list',
     loadChildren: () => import('./pages/patient-doctors-list/patient-doctors-list.module').then( m => m.PatientDoctorsListPageModule)
   },
+  {
+    path: 'patient-doctor-chat',
+    loadChildren: () => import('./pages/patient-doctor-chat/patient-doctor-chat.module').then( m => m.PatientDoctorChatPageModule)
+  },
 ];
 
 @NgModule({
