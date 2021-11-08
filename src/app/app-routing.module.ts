@@ -59,6 +59,10 @@ const routes: Routes = [
     path: 'patient-chat-info',
     loadChildren: () => import('./pages/patient-chat-info/patient-chat-info.module').then( m => m.PatientChatInfoPageModule)
   },
+  {
+    path: 'patient-payment',
+    loadChildren: () => import('./pages/patient-payment/patient-payment.module').then( m => m.PatientPaymentPageModule)
+  },
 ];
 
 @NgModule({

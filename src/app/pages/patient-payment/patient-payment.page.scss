@@ -1,0 +1,39 @@
+#btn1{
+  background-color:rgb(28,54,94);
+  border-radius: 4px;
+}
+
+#btn2{
+  background-color:rgb(126, 15, 15);
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.buttons{
+  display: inline-flex;
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+h4{
+  display: inline-block;
+  text-align: left;
+}
+
+#back{
+  color:darkslategrey;
+  --border-radius: 150%;
+  width: 16% !important;
+  height:10% !important;
+  padding:1px;
+}
+ion-icon{
+  width: 100px;
+  height: 100px;
+}
+
+ion-card{
+  -webkit-box-shadow: 0px 2px 5px 1px #414141;
+ box-shadow: 0px 2px 5px 1px #414141;
+}
