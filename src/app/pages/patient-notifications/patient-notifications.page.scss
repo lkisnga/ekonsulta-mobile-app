@@ -1,0 +1,31 @@
+
+#fixed{
+  color: dimgray;
+  font-size: x-large;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  color: dimgray;
+}
+
+#back{
+  color:darkslategrey;
+  --border-radius: 100%;
+  width: 16% !important;
+  height: 10% !important;
+  padding:1px;
+}
+
+ion-icon{
+  width: 100px;
+  height: 100px;
+}
+
+ion-toolbar{
+  -webkit-box-shadow: 0 8px 6px -6px gray;
+	-moz-box-shadow: 0 8px 6px -6px gray;
+	box-shadow: 0 8px 6px -6px gray;
+}
+
+h6{
+  color:gray;
+}
