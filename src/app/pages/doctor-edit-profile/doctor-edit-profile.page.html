@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/doctor-profile"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="outer">
+      <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" id="pic">
+      <div class="inner">
+        <input class="inputfile" type="file" name="pic" accept="image/*">
+        <label><ion-icon name="cloud-upload-outline"></ion-icon></label>
+      </div>
+    </div>
+  </div>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input placeholder="Firstname Mi. Lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime  placeholder="Select Date"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contact Number</ion-label>
+      <ion-input placeholder="(+63)" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>License Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Specialization</ion-label>
+      <ion-select>
+        <ion-select-option value="General Paracticioner">General Paracticioner</ion-select-option>
+        <ion-select-option value="EENT">Manulife</ion-select-option>
+        <ion-select-option value="Allergist">Allergist</ion-select-option>
+        <ion-select-option value="Pediatrician">Pediatrician</ion-select-option>
+        <ion-select-option value="Dermatologist">Dermatologist</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Address</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-list>
+  <div style="text-align:center;">
+    <ion-button display="center" id="btn1" color="rgb(28,54,94)" >Save Changes</ion-button>
+  </div><br>
+</ion-content>

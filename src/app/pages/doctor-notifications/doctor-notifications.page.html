@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title id="fixed">Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-sliding>
+    <ion-item button  (click)="showAlert()">
+      <ion-label>New Message</ion-label>
+      <h6>10:45AM 11/9/2021</h6>
+    </ion-item>
+    <ion-item-options side="start">
+      <ion-item-option color="secondary">Mark Unread</ion-item-option>
+    </ion-item-options>
+    <ion-item-options side="end">
+      <ion-item-option color="danger">Delete</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item button  (click)="showAlert()">
+      <ion-label>New message</ion-label>
+      <h6>6:31PM 11/9/2021</h6>
+    </ion-item>
+    <ion-item-options side="start">
+      <ion-item-option color="secondary">Mark Unread</ion-item-option>
+    </ion-item-options>
+    <ion-item-options side="end">
+      <ion-item-option color="danger">Delete</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-content>

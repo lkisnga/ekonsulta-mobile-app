@@ -71,6 +71,22 @@ const routes: Routes = [
     path: 'patient-notifications',
     loadChildren: () => import('./pages/patient-notifications/patient-notifications.module').then( m => m.PatientNotificationsPageModule)
   },
+  {
+    path: 'patient-edit-profile',
+    loadChildren: () => import('./pages/patient-edit-profile/patient-edit-profile.module').then( m => m.PatientEditProfilePageModule)
+  },
+  {
+    path: 'doctor-profile',
+    loadChildren: () => import('./pages/doctor-profile/doctor-profile.module').then( m => m.DoctorProfilePageModule)
+  },
+  {
+    path: 'doctor-notifications',
+    loadChildren: () => import('./pages/doctor-notifications/doctor-notifications.module').then( m => m.DoctorNotificationsPageModule)
+  },
+  {
+    path: 'doctor-edit-profile',
+    loadChildren: () => import('./pages/doctor-edit-profile/doctor-edit-profile.module').then( m => m.DoctorEditProfilePageModule)
+  },
 ];
 
 @NgModule({
