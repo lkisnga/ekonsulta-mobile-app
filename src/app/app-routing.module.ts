@@ -87,6 +87,18 @@ const routes: Routes = [
     path: 'doctor-edit-profile',
     loadChildren: () => import('./pages/doctor-edit-profile/doctor-edit-profile.module').then( m => m.DoctorEditProfilePageModule)
   },
+  {
+    path: 'doctor-consultation',
+    loadChildren: () => import('./pages/doctor-consultation/doctor-consultation.module').then( m => m.DoctorConsultationPageModule)
+  },
+  {
+    path: 'doctor-patient-chat',
+    loadChildren: () => import('./pages/doctor-patient-chat/doctor-patient-chat.module').then( m => m.DoctorPatientChatPageModule)
+  },
+  {
+    path: 'doctor-chat-info',
+    loadChildren: () => import('./pages/doctor-chat-info/doctor-chat-info.module').then( m => m.DoctorChatInfoPageModule)
+  },
 ];
 
 @NgModule({

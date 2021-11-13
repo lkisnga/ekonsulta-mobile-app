@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>E-konsulta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+  <ion-toolbar style="text-align:center;">
+    <ion-segment value="consultations" [(ngModel)]="selectTabs">
+      <ion-segment-button value="upcoming">
+        <ion-icon name="today"></ion-icon>
+        <ion-label>Upcoming</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="done">
+        <ion-icon name="checkmark-done-circle"></ion-icon>
+        <ion-label>Done</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="selectTabs=='upcoming'">
+    <ion-list>
+      <ion-item button routerLink="/doctor-patient-chat">
+       <ion-label>
+         <h2>Finn</h2>
+         <p>Listen, I've had a pretty messed up day...</p>
+       </ion-label>
+      </ion-item>
+      <ion-item button>
+       <ion-label>
+         <h2>Finn</h2>
+         <p>Listen, I've had a pretty messed up day...</p>
+       </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item><ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item><ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item><ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item><ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item><ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item><ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+       <ion-item button>
+        <ion-label>
+          <h2>Finn</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+       </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="selectTabs=='done'">
+    <ion-list>
+      <ion-item button>
+       <ion-label>
+        <h2>Han</h2>
+        <p>I've got enough on my plate as it is, and I...</p>
+       </ion-label>
+      </ion-item>
+      <ion-item button>
+       <ion-label>
+        <h2>Han</h2>
+        <p>I've got enough on my plate as it is, and I...</p>
+       </ion-label>
+      </ion-item>
+      <ion-item button>
+       <ion-label>
+        <h2>Han</h2>
+        <p>I've got enough on my plate as it is, and I...</p>
+       </ion-label>
+      </ion-item>
+      <ion-item button>
+       <ion-label>
+        <h2>Han</h2>
+        <p>I've got enough on my plate as it is, and I...</p>
+       </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
